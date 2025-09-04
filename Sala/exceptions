@@ -24,7 +24,7 @@ else:
 
 #Implemente um programa que abra um arquivo chamado dados.txt (não precisa existir). Use try e finally para garantir que uma mensagem de "Encerrando programa" seja sempre exibida.
 try:
-    arquivo = open("dados.txt", "r")  # Tenta abrir o arquivo para leitura
+    arquivo = open("dados.txt", "r")
     conteudo = arquivo.read()
     print("Conteúdo do arquivo:")
     print(conteudo)
