@@ -34,7 +34,7 @@ FROM Turma
 GROUP BY ano;
 
 /*8. Calcule a média da nota1 dos alunos por turma_id. (Use GROUP BY com função de agregação)*/
-SELECT id_turma, nota1 AS media
+SELECT id_turma, AVG(nota1) AS media
 FROM Aluno
 GROUP BY id_turma
 
