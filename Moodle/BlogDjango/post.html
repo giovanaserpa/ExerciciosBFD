@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>blog da gi</title>
+</head>
+<body>
+<h1>blog da gi</h1>
+{% for post in posts %}
+<article>
+<h2>{{ post.title }}</h2>
+<p>{{ post.text }}</p>
+<small>Publicado em: {{ post.published_date }}</small>
+</article>
+<hr>
+{% endfor %}
+</body>
+</html>
